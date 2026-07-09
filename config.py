@@ -9,7 +9,7 @@ class Config:
     API_HASH = os.environ.get("API_HASH", "")
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
     DATABASE_URL = os.environ.get("DATABASE_URL", "")
-    DATABASE_NAME = os.environ.get("DATABASE_NAME", "ebotz")
+    DATABASE_NAME = os.environ.get("DATABASE_NAME", "codiifybot")
     OWNER_ID = int(os.environ.get("OWNER_ID", 0))
     SUDO_USERS = (
         list(map(int, os.environ.get("SUDO_USERS", "").split()))
