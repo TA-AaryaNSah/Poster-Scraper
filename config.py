@@ -5,24 +5,24 @@ load_dotenv("../config.env", override=True)
 load_dotenv("config.env", override=True) 
 
 class Config:
-    API_ID = int(os.environ.get("API_ID", 0))
-    API_HASH = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+    API_ID = int(os.environ.get("API_ID", "32541562")
+    API_HASH = os.environ.get("API_HASH", "e37e4432298d5a5eb4a6e32c18804283")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "8964651081:AAEFx00gGDUuoUXsx9luEkN1drxIrwM23E4")
     DATABASE_URL = os.environ.get("DATABASE_URL", "")
     DATABASE_NAME = os.environ.get("DATABASE_NAME", "codiifybot")
-    OWNER_ID = int(os.environ.get("OWNER_ID", 0))
+    OWNER_ID = int(os.environ.get("OWNER_ID", "8676822109")
     SUDO_USERS = (
-        list(map(int, os.environ.get("SUDO_USERS", "").split()))
+        list(map(int, os.environ.get("SUDO_USERS", "-1002737553290").split()))
         if os.environ.get("SUDO_USERS")
         else []
     )
     AUTH_CHATS = (
-        list(map(int, os.environ.get("AUTH_CHATS", "").split()))
+        list(map(int, os.environ.get("AUTH_CHATS", "-1002737553290").split()))
         if os.environ.get("AUTH_CHATS")
         else []
     )
     # For Koyeb/render 
-    WEB_SERVER = os.environ.get("WEB_SERVER", "false").lower() == "true" # Set True if deploying on koyeb/render else False
+    WEB_SERVER = os.environ.get("WEB_SERVER", "true").lower() == "true" # Set True if deploying on koyeb/render else False
     PING_URL = os.environ.get("PING_URL", "") # koyeb/render's base url
     PING_TIME = int(os.environ.get("PING_TIME", 300))
     PORT = int(os.environ.get("PORT", 8080))
