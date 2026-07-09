@@ -5,12 +5,12 @@ load_dotenv("../config.env", override=True)
 load_dotenv("config.env", override=True) 
 
 class Config:
-    API_ID = int(os.environ.get("API_ID", "32541562")
+    API_ID = int(os.environ.get("API_ID", "32541562"))
     API_HASH = os.environ.get("API_HASH", "e37e4432298d5a5eb4a6e32c18804283")
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "8964651081:AAEFx00gGDUuoUXsx9luEkN1drxIrwM23E4")
     DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://aryankumarsha20:CjdV5plwbpvwTTCU@cluster0.3zw5xk8.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
     DATABASE_NAME = os.environ.get("DATABASE_NAME", "codiifybot")
-    OWNER_ID = int(os.environ.get("OWNER_ID", "8676822109")
+    OWNER_ID = int(os.environ.get("OWNER_ID", "8676822109"))
     SUDO_USERS = (
         list(map(int, os.environ.get("SUDO_USERS", "-1002737553290").split()))
         if os.environ.get("SUDO_USERS")
