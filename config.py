@@ -17,7 +17,7 @@ class Config:
         else []
     )
     AUTH_CHATS = (
-        list(map(int, os.environ.get("AUTH_CHATS", "-1002737553290").split()))
+        list(map(int, os.environ.get("AUTH_CHATS", "5324901127").split()))
         if os.environ.get("AUTH_CHATS")
         else []
     )
